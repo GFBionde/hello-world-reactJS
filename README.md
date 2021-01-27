@@ -28,12 +28,15 @@ npm start
 
 Dessa forma, o npx irá criar um aplicação Hello World, com toda a estrutura utilizada pelo ReactJS, e a partir do npm start, a aplicação será executada e aberta no localhost.
 
+<br/><br/>
+
 # Estrutura de Pastas
 
 Dentro da pasta de seu projeto, você encontrará a pasta "public". Esta, possui o arquivo index.html -- que servirá como template para o index de seu website. 
 <br/>
-Note que, dentro deste .html, há uma div com o id "root" -- este id é referenciado, no arquivo index.js, pela função Render, que pertence ao objeto ReactDOM da biblioteca ReactJS. <br/>
-Esta função recebe dois argumentos: Componente JS, Elemento DOM. Dessa forma, ela irá renderizar o componente dentro do conteúdo do elemento DOM enviado por parâmetro.
+
+Note que, dentro deste .html, há uma div com o id "root" -- este id é referenciado, no arquivo index.js, pela função Render, que pertence ao objeto ReactDOM da biblioteca ReactJS. 
+<br/>
 
 
 ```
@@ -45,3 +48,5 @@ ReactDOM.render(<App />, document.getElementById('root'));
 
 ```
 
+Esta função recebe dois argumentos: Componente JS, Elemento DOM. Dessa forma, ela irá renderizar o componente dentro do conteúdo do elemento DOM enviado por parâmetro.
+<br/>
