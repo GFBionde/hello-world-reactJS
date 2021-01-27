@@ -45,8 +45,10 @@ Note que, dentro deste .html, há uma div com o id "root" -- este id é referenc
 
 // Função que faz o papel de "encaixar" um componente, em um elemento.
 ReactDOM.render(<App />, document.getElementById('root'));
-
 ```
 
-Esta função recebe dois argumentos: Componente JS, Elemento DOM. Dessa forma, ela irá renderizar o componente dentro do conteúdo do elemento DOM enviado por parâmetro.
 <br/>
+Esta função recebe dois argumentos: Componente JS, Elemento DOM. Dessa forma, ela irá renderizar o componente dentro do conteúdo do elemento DOM enviado por parâmetro, construindo assim a UI através de elementos criados pelo JS.
+
+<br/>
+
