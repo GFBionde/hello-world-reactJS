@@ -28,14 +28,27 @@ npm start
 
 Dessa forma, o npx irá criar um aplicação Hello World, com toda a estrutura utilizada pelo ReactJS, e a partir do npm start, a aplicação será executada e aberta no localhost.
 
-<br/><br/>
+<br/>
 
 # Estrutura de Pastas
 
-Dentro da pasta de seu projeto, você encontrará a pasta "public". Esta, possui o arquivo index.html -- que servirá como template para o index de seu website. 
+<img src="https://i.imgur.com/FpocJil.png" />
+
+Com o projeto criado, sua estrutura de pastas deve estar semelhante à esta.
 <br/>
 
-Note que, dentro deste .html, há uma div com o id "root" -- este id é referenciado, no arquivo index.js, pela função Render, que pertence ao objeto ReactDOM da biblioteca ReactJS. 
+O diretório **node_modules** possui os módulos do seu projeto que foram instalados via npm. Normalmente, não se faz alterações nela.
+<br/>
+
+O **diretório "public"** possui os arquivos públicos da sua aplicação, como os documentos HTML e imagens, por exemplo. Note que ela já contem um index.html -- que neste exemplo serve como template para o index de seu website. 
+<br/>
+
+Por último, o **diretório "src"** que engloba seus arquivos de código-fonte JS, CSS, JSX.
+
+
+# Sobre este exemplo
+
+Note que, o arquivo index.html (dir public) possui uma div com o id "root" -- este id é referenciado dentro do arquivo index.js (dir src), pela função Render, que pertence ao objeto ReactDOM da biblioteca ReactJS. 
 <br/>
 
 
@@ -48,7 +61,8 @@ ReactDOM.render(<App />, document.getElementById('root'));
 ```
 
 <br/>
-Esta função recebe dois argumentos: Componente JS, Elemento DOM. Dessa forma, ela irá renderizar o componente dentro do conteúdo do elemento DOM enviado por parâmetro, construindo assim a UI através de elementos criados pelo JS.
+Esta função recebe dois argumentos: 1. Componente JS, 2. Elemento DOM. Dessa forma, ela irá renderizar o componente dentro do conteúdo do elemento DOM enviado por parâmetro, construindo assim a UI através de elementos criados pelo ReactJS.
 
 <br/>
+
 
