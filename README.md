@@ -1,3 +1,9 @@
+# Hello World App - REACT JS
+
+Nothing but a simple/introductory hello world app, developed with React JS.
+
+<hr/>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
