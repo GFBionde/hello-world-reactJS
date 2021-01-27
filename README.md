@@ -62,7 +62,12 @@ ReactDOM.render(<App />, document.getElementById('root'));
 ```
 
 <br/>
-Esta função recebe dois argumentos: 1. Componente JS, 2. Elemento DOM. Dessa forma, ela irá renderizar o componente dentro do conteúdo do elemento DOM enviado por parâmetro, construindo assim a UI através de elementos criados pelo ReactJS.
+Esta função recebe dois argumentos: <br/>
+
+1. Componente JS, <br/> 
+2. Elemento DOM. <br/> 
+
+Dessa forma, ela irá renderizar o componente dentro do conteúdo do elemento DOM enviado por parâmetro, construindo assim a UI através de elementos criados pelo ReactJS.
 
 <br/>
 
