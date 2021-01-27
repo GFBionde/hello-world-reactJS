@@ -1,76 +1,47 @@
 # Hello World App - REACT JS
 
-Nothing but a simple/introductory hello world app, developed with React JS.
+ReactJS é uma biblioteca JS com foco no desenvolvimento front-end, seguindo a lógica de um SPA (Single Page App) e utilizando da criação de componentes escritos em Javascript para criar a UI da aplicação. 
 
-<hr/>
+Para criar uma aplicação ReactJS, basta instalar a última versão do NodeJS, e atualizar npm/yarn.
 
-# Getting Started with Create React App
+Após isso, navegue até a pasta do seu projeto, e execute estes comandos via terminal:
+ 
+```
+npx create-react-app nome-app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+cd nome-app
 
-## Available Scripts
+npm start
+```
 
-In the project directory, you can run:
+Ou, pelo NPM..
 
-### `yarn start`
+```
+npm install create-react-app -g
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+create-react-app nome-app
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+cd nome-app
 
-### `yarn test`
+npm start
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Dessa forma, o npx irá criar um aplicação Hello World, com toda a estrutura utilizada pelo ReactJS, e a partir do npm start, a aplicação será executada e aberta no localhost.
 
-### `yarn build`
+# Estrutura de Pastas
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Dentro da pasta de seu projeto, você encontrará a pasta "public". Esta, possui o arquivo index.html -- que servirá como template para o index de seu website. 
+<br/>
+Note que, dentro deste .html, há uma div com o id "root" -- este id é referenciado, no arquivo index.js, pela função Render, que pertence ao objeto ReactDOM da biblioteca ReactJS. <br/>
+Esta função recebe dois argumentos: Componente JS, Elemento DOM. Dessa forma, ela irá renderizar o componente dentro do conteúdo do elemento DOM enviado por parâmetro.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+// Div Root responsável por conter os componentes dinâmicos.
+<div id="root"></div>
 
-### `yarn eject`
+// Função que faz o papel de "encaixar" um componente, em um elemento.
+ReactDOM.render(<App />, document.getElementById('root'));
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
