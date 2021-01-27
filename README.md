@@ -45,6 +45,7 @@ O **diretório "public"** possui os arquivos públicos da sua aplicação, como 
 
 Por último, o **diretório "src"** que engloba seus arquivos de código-fonte JS, CSS, JSX.
 
+<br/>
 
 # Sobre este exemplo
 
