@@ -4,12 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+
+/* 
+  Aqui é específicado o elemento da DOM que será controlado pelo React. 
+  Neste caso, o elemento 'root' (div no arquivo index.html, com o id='root').
+
+  Dessa forma, o componente 'app' representa a view que vimos no browser.
+*/
+ReactDOM.render(<App />, document.getElementById('root'));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
