@@ -49,7 +49,7 @@ Por último, o **diretório "src"** que engloba seus arquivos de código-fonte J
 
 # Sobre este exemplo
 
-Note que, o arquivo index.html (dir public) possui uma div com o id "root" -- este id é referenciado dentro do arquivo index.js (dir src), pela função Render, que pertence ao objeto ReactDOM da biblioteca ReactJS. 
+Note que, o arquivo index.html (dir public) possui uma div com o **id "root"** -- este id é referenciado dentro do arquivo **index.js (dir src)**, pela função Render, que pertence ao objeto ReactDOM da biblioteca ReactJS. 
 <br/>
 
 
@@ -62,7 +62,7 @@ ReactDOM.render(<App />, document.getElementById('root'));
 ```
 
 <br/>
-Esta função recebe dois argumentos: <br/>
+A função Render recebe dois argumentos: <br/>
 
 1. Componente JS, <br/> 
 2. Elemento DOM. <br/> 
